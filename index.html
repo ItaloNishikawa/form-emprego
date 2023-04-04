@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="script.js" />
+  <head>
+    <title>Formulário de Recrutamento</title>
+  </head>
+  <body>
+    <header>
+    <nav>
+      <a href="index.html">
+        <img class="logo" src="http://www.ifto.edu.br/imagens/identidade-visual/marca-ifto-assinatura-2-preto.png/@@images/image.png" alt="logo" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Product & Services</a></li>
+        <li><a href="#">Contant</a></li>
+        <li><a href="#">Employe Acess</a></li>
+      </ul>
+    </nav>
+  </header>
+    <div class="container">
+      <header>
+        <h1>Formulário de Recrutamento</h1>
+      </header>
+      <form action="#" method="post" onsubmit="return validarFormulario()">
+        <p>
+          As informações fornecidas neste formulário serão usadas exclusivamente
+          para fins de recrutamento e seleção. Todos os campos são obrigatórios,
+          exceto onde indicado o contrário.
+        </p>
+
+        <div class="primeiro-form">
+          <h2>Dados Pessoais</h2>
+          <div class="campo">
+            <div class="linha">
+              <div class="campo-de-entrada">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" placeholder="digite seu nome" name="nome" required/>
+              </div>
+			  <div class="campo-de-entrada">
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required/>
+              </div>
+            </div>
+
+            <div class="linha">
+              <div class="campo-de-entrada">
+                <label for="genero">Gênero:</label>
+                <select id="genero" name="genero" required>
+                  <option value="">Selecione</option>
+                  <option value="masculino">Masculino</option>
+                  <option value="feminino">Feminino</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+
+              <div class="campo-de-entrada">
+                <label for="nacionalidade">Nacionalidade:</label>
+                <input type="text" id="nacionalidade" placeholder="digite sua nacionalidade" name="nacionalidade" required
+                />
+              </div>
+            </div>
+
+            <div class="linha">
+              <div class="campo-de-entrada">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" placeholder="digite seu endereço" name="endereco" required/>
+              </div>
+			  <div class="campo-de-entrada">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" placeholder="nome de sua cidade" name="cidade" required/>
+              </div>
+            </div>
+
+            <div class="linha">
+              <div class="campo-de-entrada">
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" placeholder="nome de seu estado" name="estado" required/>
+              </div>
+
+              <div class="campo-de-entrada">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" placeholder="digite seu CEP" name="cep" required/>
+              </div>
+            </div>
+
+            <div class="linha">
+              <div class="campo-de-entrada">
+                <div class="centralizado-diminuido">
+                  <label for="telefone">Telefone:</label>
+                  <br />
+                  <input type="tel" id="telefone" placeholder="digite seu telefone" name="telefone" required/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="segundo-form">
+          <h2>Formação Acadêmica</h2>
+          <div class="linha">
+            <div class="campo-de-entrada">
+              <label for="formacao">Formação:</label>
+              <select id="formacao" name="formacao" required>
+                <option value="">Selecione</option>
+                <option value="Técnico em Informática">
+                  Técnico em Informática
+                </option>
+                <option
+                  value="Técnologo em Análise e Desenvolvimento de Sistemas"
+                >
+                  Técnologo em Análise e Desenvolvimento de Sistemas
+                </option>
+              </select>
+            </div>
+            <div class="campo-de-entrada">
+              <label for="outros-cursos">Outros cursos:</label>
+              <input
+                placeholder="Digite seus outros cursos"
+                type="text"
+                id="outros-cursos"
+                name="outros-cursos"
+              />
+            </div>
+          </div>
+
+          <h2>Experiências Profissionais</h2>
+          <div class="linha">
+            <div class="campo-de-entrada">
+              <div class="centralizado-diminuido">
+                <label for="experiencia">Experiência:</label>
+                <select id="experiencia" name="experiencia" required>
+                  <option value="">Selecione</option>
+                  <option value="Não possuo">Não possuo</option>
+                  <option value="Última ou Atual Empresa">
+                    Última ou Atual Empresa
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="linha">
+            <div class="campo-de-entrada">
+              <label for="cargo">Cargo:</label>
+              <input placeholder="Digite seu cargo" type="text" id="cargo" name="cargo" />
+            </div>
+            <div class="campo-de-entrada">
+              <label for="periodo"
+                >Período de Atuação (Mês/Ano – Mês/Ano):</label
+              >
+              <input placeholder="(Mês/Ano – Mês/Ano)" type="text" id="periodo" name="periodo" />
+            </div>
+          </div>
+          <div class="linha">
+            <div class="campo-de-entrada">
+              <label for="atividades-responsabilidades"
+                >Principais Atividades e Responsabilidades:</label
+              >
+              <input placeholder="Responsabilidades de seus cargos" type="text" id="atividades-responsabilidades" name="atividades-responsabilidades"></input>
+            </div>
+          </div>
+        </div>
+
+        <div class="terceiro-form">
+          <h2>Habilidades Técnicas e Idiomas</h2>
+          <div class="linha">
+            <div class="campo-de-entrada">
+              <label for="habilidades-tecnicas"
+                >Habilidades Técnicas Relevantes:
+			</label>
+              <textarea id="habilidades-tecnicas" name="habilidades-tecnicas"></textarea>
+            </div>
+          </div>
+          <div class="linha">
+            <div class="campo-de-entrada">
+              <label for="idiomas">Idiomas:</label>
+              <input placeholder="Idioma Experiente" type="text" id="idiomas" name="idiomas" />
+            </div>
+            <div class="campo-de-entrada">
+              <label for="proficiencia">Nível de Proficiência:</label>
+              <select id="proficiencia" name="proficiencia">
+                <option value="">Selecione</option>
+                <option value="Básico">Básico</option>
+                <option value="Intermediário">Intermediário</option>
+                <option value="Avançado">Avançado</option>
+                <option value="Fluente">Fluente</option>
+              </select>
+            </div>
+          </div>
+
+          <h2>Habilidades Comportamentais</h2>
+          <div class="linha">
+            <div class="campo-de-entrada">
+              <label for="habilidades-comportamentais-1">Habilidade 1:</label>
+              <input
+                placeholder="Digite sua Competência"
+                type="text"
+                id="habilidades-comportamentais-1"
+                name="habilidades-comportamentais-1"
+                required
+              />
+            </div>
+            <div class="campo-de-entrada">
+              <label for="habilidades-comportamentais-2">Habilidade 2:</label>
+              <input
+                placeholder="Digite sua Competência"
+                type="text"
+                id="habilidades-comportamentais-2"
+                name="habilidades-comportamentais-2"
+                required
+              />
+            </div>
+            <div class="campo-de-entrada">
+              <label for="habilidades-comportamentais-3">Habilidade 3:</label>
+              <input
+                placeholder="Digite sua competência"
+                type="text"
+                id="habilidades-comportamentais-3"
+                name="habilidades-comportamentais-3"
+                required
+              />
+            </div>
+          </div>
+          <h2>Informações Adicionais</h2>
+          <div class="linha">
+            <div class="campo-de-entrada">
+              <label for="pretensao-salarial">Pretensão Salarial:</label>
+              <input
+                placeholder="Digite sua pretensão salarial" type="number" id="pretensao-salarial" name="pretensao-salarial"/>
+            </div>
+            <div class="campo-de-entrada">
+              <label for="disponibilidade">Disponibilidade para Início:</label>
+              <input placeholder="" type="date" id="disponibilidade" name="disponibilidade"/>
+            </div>
+          </div>
+          <div class="botoes">
+            <button type="submit" class="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(36, 131, 51, 1);
+    font-family: Arial;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+header li,
+a {
+     font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+  color: #FCF7FF;
+  text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .nav__links a {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    border-radius: 40px;
+  }
+  
+  .nav__links a:hover {
+    background-color: rgba(36, 131, 51, 1);
+    border: 1px solid rgba(30, 50, 49, 1);
+  }
+  
+  .nav__links {
+    display: flex;
+    list-style: none;
+  }
+
+.container {
+    background-color: #00F4A2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.campo-de-entrada{
+   width: 90%;
+}
+
+.campo-de-entrada input:not(#telefone, #experiencia), select:not(#experiencia){
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    
+    
+}
+
+/* campo-de-estrada especifico*/
+
+.centralizado-diminuido{
+    
+    margin-left: 35%;
+}
+
+#telefone, #experiencia{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    
+}
+
+#habilidades-tecnicas{
+    width: 725px;
+    height: 200px;
+
+}
+
+.linha{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 15px;   
+}
+
+.botoes .submit{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.botoes .submit:hover{
+    background-color: #555;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
